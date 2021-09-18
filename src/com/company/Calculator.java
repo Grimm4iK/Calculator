@@ -2,10 +2,9 @@ package com.company;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
 import java.util.Scanner;
 
-public class Main2 {
+public class Calculator {
     public static void main(String[] args){
         try {
             Scanner scanner = new Scanner(System.in);

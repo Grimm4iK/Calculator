@@ -2,14 +2,12 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class TestCalculator {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите выражение(пример 2*2): ");
         String st = scanner.next();
-
-
         int result;
         try {
             for (int i = 0; i < st.length(); i++) {
