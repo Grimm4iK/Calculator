@@ -11,8 +11,8 @@ public class Calculator {
             ScriptEngineManager mgr = new ScriptEngineManager();
             ScriptEngine engine = mgr.getEngineByName("JavaScript");
             System.out.print("Введите выражение: ");
-            String foo = scanner.next();
-            System.out.println(engine.eval(foo));
+            String str = scanner.next();
+            System.out.println(engine.eval(str));
         }catch (Exception e){
             System.out.println("Неверный формат строки!!!");
         }
