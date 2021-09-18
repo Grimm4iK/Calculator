@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
+//Считает выражение из двух чисел
 public class TestCalculator {
 
     public static void main(String[] args){
