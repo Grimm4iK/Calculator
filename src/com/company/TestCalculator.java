@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Считает выражение из двух чисел
 public class TestCalculator {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите выражение(пример 2*2): ");
         String st = scanner.next();
@@ -26,7 +26,7 @@ public class TestCalculator {
                     System.out.print(result);
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Не верный формат строки !!!");
         }
     }
