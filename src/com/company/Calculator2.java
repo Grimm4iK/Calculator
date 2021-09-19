@@ -9,6 +9,7 @@ public class Calculator2 {
     public static void main(String[] args) {
 try {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Пример ввода: 2 + 2 * 2");
     System.out.println("Введите свое выражение через пробел: ");
     String expr = scanner.nextLine();
     scanner.close();
