@@ -14,7 +14,7 @@ public class Calculator {
             String str = scanner.next();
             System.out.println(engine.eval(str));
         } catch (Exception e) {
-            System.out.println("Неверный формат строки!!!");
+            System.out.println("Неверный формат строки!!!!");
         }
     }
 }
