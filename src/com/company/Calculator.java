@@ -29,7 +29,7 @@ public class Calculator {
 
     public static boolean CheckValidation(String expression) {
         String zeroRegex = "/0";
-        String validateRegex = "^-?\\d+\\s*[+-/*]\\s*(\\(-(\\d+|\\d+\\.\\d+)\\)|(\\d+|\\d+\\.\\d+))\\s*([+\\-*/]\\s*(\\(-(\\d+|\\d+\\.\\d+)\\)|(\\d+|\\d+\\.\\d+))+\\s*)*$";
+        String validateRegex = "^\\d+\\s*[+-/*]\\s*(\\(-(\\d+|\\d+\\.\\d+)\\)|(\\d+|\\d+\\.\\d+))\\s*([+\\-*/]\\s*(\\(-(\\d+|\\d+\\.\\d+)\\)|(\\d+|\\d+\\.\\d+))+\\s*)*$";
         Pattern pattern = Pattern.compile(zeroRegex);
         Matcher matcher = pattern.matcher(expression);
 
@@ -37,7 +37,7 @@ public class Calculator {
             System.out.println("Не верный формат!");
             return false;
         } else if (matcher.find()) {
-            System.out.println("Попытка делить на 0");
+            System.out.println("На 0 делить нельзя");
             return false;
         }
 
