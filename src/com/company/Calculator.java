@@ -34,7 +34,7 @@ public class Calculator {
         Matcher matcher = pattern.matcher(expression);
 
         if (!Pattern.matches(validateRegex, expression)) {
-            System.out.println("Не верный формат, попробуйте еще раз");
+            System.out.println("Не верный формат!");
             return false;
         } else if (matcher.find()) {
             System.out.println("Попытка делить на 0");
